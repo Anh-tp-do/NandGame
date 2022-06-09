@@ -22,7 +22,7 @@ module tb_logicgates;
     begin
       {a,b} = 0
       
-      $monitor( 
+      $monitor("T=%0t a=%0b b=%0b out_nand=%0b  out_inv=%0b out_and=%0b out_or=%0b out_xor=%0b]", $time, a, b, out_nand, out_inv, out_and, out_or, out_xor)
         for (i = 0; i < 4; i = i+1)
           begin
             #1 a <= $random;
