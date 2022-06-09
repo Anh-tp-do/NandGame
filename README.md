@@ -100,5 +100,6 @@ h = a.b which is And(a,b)
 ![image](https://user-images.githubusercontent.com/36804143/172902634-d18a7450-5009-45bc-9230-4e64e58652e8.png)
 
 # Full Adder
+![image](https://user-images.githubusercontent.com/36804143/172903364-fbc8dd87-e464-4b8e-a05e-8e11e9ccd2ec.png)
 
 
