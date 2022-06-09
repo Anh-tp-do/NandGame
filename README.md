@@ -62,7 +62,10 @@ Given:
  - Or
 Task: Create a Xor gate
 
-Output = Xor(a,b) = a'.b + a.b', which can translate to Or((And(Inv(a), b), 
+Output = Xor(a,b) = a'.b + a.b', which can translate to Or((And(Inv(a), b), And(a, Inv(b))
+Let's look at a different implementation that requires fewer gates.
+We have Output = Xor(a,b) = a'.b + a.b' = a'.a + b'.b + a'.b + a.b' = (a'.b').(a+b) = (a.b)'.(a+b) which translates to And(Nand(a,b),Or(a,b)).
+We now went from 5 gates to 3 gates.
 
 ![image](https://user-images.githubusercontent.com/36804143/172894469-fcfd0636-4b36-4647-ac49-5f1633bc47ce.png)
 
