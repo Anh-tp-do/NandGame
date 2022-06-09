@@ -102,4 +102,53 @@ h = a.b which is And(a,b)
 # Full Adder
 ![image](https://user-images.githubusercontent.com/36804143/172903364-fbc8dd87-e464-4b8e-a05e-8e11e9ccd2ec.png)
 
+# Muti-bit Adder
+
+# Increment
+
+# Subtraction
+
+
+# Equal to Zero
+
+# Less than Zero
+
+# Selector
+
+
+# Switch
+
+
+# Logic Unit
+
+# Arithmetic Unit
+
+
+# ALU
+
+# Condition
+
+# Latch
+
+# Data Flip-flop
+
+
+# Register
+
+# Counter
+
+# RAM
+
+
+# Combined Memory
+
+
+# Instruction
+
+# Control Unit
+
+# Computer
+
+# Input and Output 
+
 
