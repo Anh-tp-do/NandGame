@@ -127,6 +127,8 @@ h = a.b which is And(a,b)
 # ALU
 
 # Condition
+![image](https://user-images.githubusercontent.com/36804143/172974901-1a877f4e-869e-427a-9d7a-b0cbc40aa8e9.png)
+
 
 # Latch
 
