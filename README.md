@@ -130,6 +130,10 @@ h = a.b which is And(a,b)
 ![image](https://user-images.githubusercontent.com/36804143/172974901-1a877f4e-869e-427a-9d7a-b0cbc40aa8e9.png)
 
 
+![image](https://user-images.githubusercontent.com/36804143/172978523-1c9298fa-48ae-4b63-86c9-fb4132456a32.png)
+
+
+
 # Latch
 
 # Data Flip-flop
