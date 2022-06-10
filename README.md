@@ -133,6 +133,9 @@ h = a.b which is And(a,b)
 ![image](https://user-images.githubusercontent.com/36804143/172978523-1c9298fa-48ae-4b63-86c9-fb4132456a32.png)
 
 
+![image](https://user-images.githubusercontent.com/36804143/172981229-ca7ab69e-2d97-4b58-a611-cc70d39f3cba.png)
+
+
 
 # Latch
 
