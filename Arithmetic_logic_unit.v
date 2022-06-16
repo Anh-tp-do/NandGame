@@ -30,6 +30,18 @@ module select16(s,d1,d0, out);
   output [15:0] out;
   assign out = s ? d1 : d0;
 endmodule 
+
+module sub16(a, b, sub16_s);
+  input [15:0] a, b;
+  output [15:0] sub16_s;
+  assign sub16_s = a-b;
+endmodule
+
+module add16(a,b,add16_s);
+  input [15:0] a,b;
+  output [15:0] add16_s;
+  assign add16_s = a+b;
+endmodule
 //--------------------------------------------------
 module Logic_unit(op1, op0, X, Y, out);
   input wire op0, op1;
