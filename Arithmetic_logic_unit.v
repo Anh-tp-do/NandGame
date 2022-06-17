@@ -77,8 +77,23 @@ module arithmetic_unit(op1, op0, X, Y, out);
   
 endmodule 
 
-//module ALU();
-//endmodule
+module ALU(u, op0, op1, zx, sw, X, Y, out);
+  input [15:0] X, Y;
+  input u, op0, op1, zx, sw;
+  output [15:0] out;
+  
+  wire zero;
+  wire [15:0] sel0, sel1, sel2, sel3, au, lu;
+  
+  assign zero = 1'b0;
+  
+  arithmetic_unit u0 (.op1(op1), .op0(op0), .X(sel2), .Y(sel0), .out(au));
+  logic_unit u1 (.op1(op1), .op0(op0), .X(sel2), .Y(sel0), .out(lu));
+  select16 u2 (.s(sw),.d1(X), .d0(Y), .out(sel0));
+  select16 u3 (.s(sw), .d1(Y), .d0(X), .out(sel1));
+  select16 u4 (.s(zx), .d1(zero), .d0(sel1), .out(sel2));
+  select16 u5 (.s(u), .d1(au), .d0(lu), .out(out));
+endmodule
 
 //module Condition();
 //endmodule 
