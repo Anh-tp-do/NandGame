@@ -58,8 +58,24 @@ module Logic_unit(op1, op0, X, Y, out);
   select16 u6 (.s(op1), .d1(sel1), .d0(sel0), .out(out));
 endmodule 
 
-//module arithmetic_unit();
-//endmodule 
+module arithmetic_unit(op1, op0, X, Y, out);
+  input op1, op0;
+  input [15:0] X, Y;
+  output [15:0] out;
+  
+  wire [15:0] add0, add1, sub0, sub1, sel0, sel1, sel2;
+  wire one;
+  assign one = 1'b1;
+  
+  sub16 u0 (.a(X), .b(Y), .sub16_s(sub0));
+  sub16 u1 (.a(X), .b(one), .sub16_s(sub1));
+  add16 u2 (.a(X), .b(Y), .add16_s(add0));
+  add16 u3 (.a(X),.b(one), .add16_s(add1));
+  select16 u4 (.s(op1), .d1(sub1), .d0(add1), .out(sel1));
+  select16 u5 (.s(op1), .d1(sub0), .d0(add0), .out(sel0));
+  select16 u6 (.s(op0), .d1(sel1), .d0(sel0), .out(out));
+  
+endmodule 
 
 //module ALU();
 //endmodule
