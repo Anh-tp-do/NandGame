@@ -1,5 +1,5 @@
 #         NandGame
-  A verilog version for Nandgame's solutions
+  Nandgame's solutions in Verilog
   https://nandgame.com/
 
 # NAND
